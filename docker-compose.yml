@@ -19,7 +19,7 @@ services:
     build: ./Backend
     container_name: attendance_backend
     ports:
-      - "3006:3006"
+      - "3207:3207"
     depends_on:
       - postgres
 
@@ -27,7 +27,7 @@ services:
     build: ./Employee-attendance
     container_name: employee_attendance_ui
     ports:
-      - "8567:80"
+      - "8014:80"
     depends_on:
       - backend
 
@@ -35,7 +35,7 @@ services:
     build: ./HR-attendance
     container_name: hr_attendance_ui
     ports:
-      - "8568:80"
+      - "8015:80"
     depends_on:
       - backend
 

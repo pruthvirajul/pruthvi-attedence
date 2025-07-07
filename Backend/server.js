@@ -2,7 +2,7 @@ const express = require('express');
 const { Pool } = require('pg');
 const cors = require('cors');
 const app = express();
-const port = 3000;
+const port = 3207;
 
 // Middleware
 app.use(cors());
@@ -203,5 +203,5 @@ app.delete('/api/admin/records', async (req, res) => {
 
 // Start server
 app.listen(port, () => {
-    console.log(`Server running on http://56.228.21.217:${port}`);
+    console.log(`Server running on http://13.60.246.56:${port}`);
 });
